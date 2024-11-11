@@ -8,7 +8,16 @@ using WebApICafe.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddCors();
+// builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 // Add services to the container.
 builder.Services.AddDbContext<CafeMgm2Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("CafeMgm")));
@@ -57,7 +66,7 @@ if (app.Environment.IsDevelopment())
 app.UseHsts();
 
 
-app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
