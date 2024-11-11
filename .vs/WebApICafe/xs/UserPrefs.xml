@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{0A8EFE51-6BAC-4EE6-A557-9912BB49A7E0}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApICafe/WebApICafe.http">
+    <Files>
+      <File FileName="WebApICafe/WebApICafe.http" Line="3" Column="11" IsPinned="True" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApICafe" expanded="True">
+            <Node name="WebApICafe">
+              <Node name="WebApICafe.http" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebApICafe PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+</Properties>
